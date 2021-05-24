@@ -193,7 +193,7 @@ body{
 
 /* COMPONENTS */
 
-.download-btn{
+.download-button{
     margin-bottom: 40px;
     width: 130px;
     height: 50px;
@@ -205,6 +205,7 @@ body{
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
+    pointer-events: none;
 }
 
 .card-t1 img{
@@ -269,7 +270,7 @@ img.plus-img{
 }
 
 .card-t3.card1 .card-txt{
-    margin-left: auto;
+    margin: auto;
     font-family: Arial;
     font-style: normal;
     font-weight: bold;
@@ -331,7 +332,22 @@ img.plus-img{
     color: #FFFFFF;
 }
 
+br.responsive-br{
+    display: none;
+}
+
+.card-t1.card1 .bottom-sub-txt a{
+    color: #DA6B92 !important;
+}
+
+.card-t1.card2 .bottom-sub-txt a{
+    color: #86A7E7 !important;
+}
+
 @media screen and (max-width: 992px){
+    br.responsive-br{
+        display: inline;
+    }
     .heading-cont{
         margin: 167px auto 0px;
         width: 100%;
@@ -373,18 +389,18 @@ img.plus-img{
 
     .card-t1 .top-sub-txt{
         font-size: 13px;
-line-height: 18px;
+        line-height: 18px;
     }
 
     .card-t1 .boximg{
         margin-left: 7.08%;
         margin-top: 40.5px;
         width: 33.92px;
-height: 47.2px;
+        height: 47.2px;
     }
         
     .card-t4.card1.card01, .card-t4.card1.card02, .card-t4.card2.card01, .card-t4.card2.card02{
-        width: 60%;
+        width: 50vw;
     }
 
     .card-t4.card1.card02, .card-t4.card2.card02{
@@ -423,14 +439,6 @@ height: 47.2px;
         letter-spacing: 0.275825px;
     }
 
-    .card-t1.card1 .bottom-sub-txt a{
-        color: #DA6B92 !important;
-    }
-
-    .card-t1.card2 .bottom-sub-txt a{
-        color: #86A7E7 !important;
-    }
-
     img.plus-img{
         display: inline;
         margin: 0px; 
@@ -438,9 +446,11 @@ height: 47.2px;
     }
 
     .card-t3.card1 .card-txt{
+        margin-left: 5.6%;
+        margin-right: 5.6%;
+        margin-top: 14.12%;
         width: 314px;
         height: 145px;
-        margin-top: 50px;
         font-size: 25px;
         line-height: 29px;
         letter-spacing: 0.144px;
@@ -538,7 +548,7 @@ height: 47.2px;
     }
 
     .card-t4.card1.card01, .card-t4.card1.card02, .card-t4.card2.card01, .card-t4.card2.card02{
-        width: 85%;
+        width: 85vw;
     }
 
     .card-t5.card1, .card-t5.card2, .card-t5.card3{
@@ -548,11 +558,22 @@ height: 47.2px;
 
 }
 
+@media screen and (max-width: 400px){
+    .card-t3.card1 .card-txt{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 415px){
+    .card-t1.card1 #this-spec{
+        font-size: 27px;
+    }
+}
+
 @media screen and (max-width: 377px){
     .card-t3.card1 .card-txt{
         margin: 14.12% 0;
         margin-left: 20px;
-        font-size: 25px;
+        font-size: 23px;
         line-height: 29px;
         letter-spacing: 0.144px;
     } 
@@ -579,6 +600,10 @@ height: 47.2px;
 }
 
 @media screen and (max-width: 370px){
+    p.heading1{
+        font-size: 28.9855px;
+line-height: 34px;
+    }
     .card-t1.card1 #this-spec{
         font-size: 24px;
     }
@@ -586,11 +611,26 @@ height: 47.2px;
         margin: 14.12% 0;
         margin-left: 25px;
         padding-right: 15px;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 27px;
         letter-spacing: 0.144px;
         display: flex;
         flex-direction: column;
     } 
     
+}
+
+@media screen and (max-width: 330px){
+
+    .card-t1.card1 #this-spec{
+        font-size: 23px;
+        line-height: 29px;
+    }
+    .card-t3.card1 .card-txt{
+        font-size: 19px;
+    }
+    .card-t3.card2 .card-txt{
+        font-size: 26px;
+        width: auto;
+    }
 }
